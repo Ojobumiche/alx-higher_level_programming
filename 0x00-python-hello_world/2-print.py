@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("""programming is like building a multilingual puzzle""")
+number = 98
+print(f"{number:d} Battery street")
