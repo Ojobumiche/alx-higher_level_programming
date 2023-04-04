@@ -4,11 +4,8 @@
 
 
 class Rectangle:
-    def__init__(self, name = None)
-        self.name = name
-    RT = Rectangle()
-    RT.name
 
     """Represent a rectangle."""
-    """pass"""
+
+        pass
 
