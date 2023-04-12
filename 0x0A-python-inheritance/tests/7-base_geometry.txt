@@ -1,8 +1,8 @@
-The 7-base_geometry module
+The ``7-base_geometry`` module
 
 ===========================
 
-Using BasedGeometry
+Using ``BasedGeometry``
 
 ----------------------
 
