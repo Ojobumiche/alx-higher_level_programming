@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defines a matrx division function."""
-
+"""This defines a matrx division function."""
 
 
 def matrix_divided(matrix, div):
