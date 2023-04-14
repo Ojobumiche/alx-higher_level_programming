@@ -1,4 +1,4 @@
-==========================
+===========================
 How to Use 0-add_integer.py
 ===========================
 
@@ -118,6 +118,6 @@ And again with NaN numbers.
 
 ::
 
-    >>> add_integer(2, float('NAN'))
-    Trace (most recent call last):
-     ValueError: cannot convert NAN to integer
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
