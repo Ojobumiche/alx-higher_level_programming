@@ -1,12 +1,8 @@
 #!/usr/bin/node
-function argument(a) {
-	if (a === 1) {
-		console.log('Argument found');
-	} else if (a === 0)  {
-		console.log('No argument found');
-	} else {
-		console.log('Arguments found');
-	}
+const args = process.argv.slice(2);
+
+if (args[0] === undefined) {
+	  console.log('No argument');
+} else {
+	  console.log(args[0]);
 }
-const a = 1; // Assign the value of a here
-argument(a);
