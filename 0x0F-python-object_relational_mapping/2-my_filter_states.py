@@ -3,8 +3,8 @@
 a script that takes in an argument and displays all values in the
 states table of hbtn_0e_0_usa where name matches the argument.
 """
-import MySQLdb
 import sys
+import MySQLdb
 
 if __name__ == "__main__":
     username = sys.argv[1]
@@ -24,8 +24,7 @@ if __name__ == "__main__":
     # Query to retrieve all states with a name starting with N
     query = "SELECT * \
             FROM states \
-            WHERE CONVERT(`name` USING Latin1) \
-            COLLATE Latin1_General_CS = '{}';".format(sys.argv[4])
+            WHERE CONVERT(`name` USING Latin1)" 
     cursor.execute(query)
 
     # Fetch all rows from the result set
