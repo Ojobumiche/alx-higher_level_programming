@@ -11,6 +11,7 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
+    search_name = sys.argv[4]
     
 
     # Connect to MySQL server
@@ -25,7 +26,7 @@ if __name__ == "__main__":
 
     # Query to retrieve all states with a name starting with N
     query = "SELECT * FROM states WHERE name = %s"
-    cursor.execute(query)
+    cursor.execute(query, (search_name))
 
     # Fetch all rows from the result set
     states = cursor.fetchall()
