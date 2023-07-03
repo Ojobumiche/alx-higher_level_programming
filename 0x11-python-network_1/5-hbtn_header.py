@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Python script that displays the response header value"""
+""" Python script that takes in a URL, sends a request to same and show
+the value of the variable X-Request-Id in the response header"""
 import sys
 import requests
 
@@ -8,4 +9,3 @@ if __name__ == "__main__":
 
     r = requests.get(url)
     print(r.headers.get("X-Request-Id"))
-
